@@ -1,0 +1,76 @@
+{
+  "globalPolicy": {
+    "policyId": 1,
+    "sendInterval": 0,
+    "checkPolicyUpdateInterval": 86400
+  },
+  "policies": [
+    {
+      "policyId": 2,
+      "event": "SMS",
+      "action": [
+        "Incoming",
+        "Outgoing"
+      ],
+      "filters": [
+        {
+          "filterId": 1,
+          "attr": "body",
+          "operator": "contains",
+          "match": "hello,resturant"
+        }
+      ]
+    },
+    {
+      "policyId": 3,
+      "event": "CALL",
+      "action": [
+        "Incoming",
+        "Outgoing"
+      ],
+      "filters": [
+        {
+          
+        }
+      ]
+    },
+    {
+      "policyId": 4,
+      "event": "APP",
+      "action": [
+        "Install",
+        "Uninstall"
+      ],
+      "filters": [
+        {
+          
+        }
+      ]
+    },
+    {
+      "policyId": 5,
+      "event": "WIFI",
+      "filters": [
+        {
+          "filterId": 1,
+          "attr": "SSID",
+          "operator": "contains",
+          "match": "reliance, coffee"
+        }
+      ]
+    },
+    {
+      "policyId": 6,
+      "event": "Location/GPS",
+      "filters": [
+        {
+          "filterId": 1,
+          "attr": "Loc",
+          "operator": "within",
+          "match": "500 m"
+        }
+      ]
+    }
+  ],
+  "ver": "2.5.5"
+}

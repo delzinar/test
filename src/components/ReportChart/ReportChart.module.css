@@ -1,0 +1,20 @@
+.labelCustom {
+    margin-right: 0.5em;
+    font-weight: bold !important;
+}
+.boxLeft {
+    margin-right: 1.5em;
+}
+.margLeft {
+    margin-left: 15px;
+}
+.leftMove {
+    width: 147px;
+    margin-left: 11px;
+}
+.formControlC {
+    padding: 3px;
+}
+.leftMoveC {
+    margin-left: 81px;
+}

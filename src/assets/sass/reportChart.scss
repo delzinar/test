@@ -1,0 +1,15 @@
+svg.ct-chart-bar, svg.ct-chart-line{
+  overflow: visible;
+}
+
+.ct-label.ct-horizontal.ct-end  {
+  position: relative !important;
+  justify-content: flex-end !important;
+  text-align: right !important;
+  transform-origin: 100% 0 !important;
+  transform: translate(-100%) rotate(-45deg) !important;
+  white-space:nowrap !important;
+
+  //full vertical
+  //transform: translate(-120%) rotate(-90deg) !important;
+}
